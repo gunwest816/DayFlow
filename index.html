@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DayFlow</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+	<h1>DayFlow</h1>
+
+	<nav>
+		<a href="index.html">Головна</a>
+		<a href="stats.html">Статистика</a>
+		<a href="about.html">Про сайт</a>
+	</nav>
+
+	<button id="themeBtn">🌙</button>
+</header>
+
+<main>
+
+	<h2>Мої задачі</h2>
+
+	<div class="filters">
+		<button onclick="setActive(this); showTasks('all')">Всі</button>
+		<button onclick="setActive(this); showTasks('active')">Активні</button>
+		<button onclick="setActive(this); showTasks('done')">Виконані</button>
+	</div>
+
+	<div class="task-form">
+		<input	type="text"	id="taskInput"	placeholder="Нова задача">
+
+		<button id="addBtn">Додати</button>
+	</div>
+
+	<div class="tasks-container">
+		<ul id="taskList"></ul>
+	</div>
+
+	<div class="progress-section">
+	<p>
+		Прогрес виконання:
+		<span id="progressText">0%</span>
+	</p>
+
+	<div class="progress-bar">
+		<div id="progressFill"></div>
+	</div>
+</div>
+
+	<button
+		id="clearBtn"
+		class="clear-btn"
+	>
+		Очистити всі задачі
+	</button>
+
+</main>
+
+<footer>
+	<p>2026 • Святослав • Створено на курсі WEB PRO</p>
+</footer>
+
+<script src="script.js"></script>
+<script src="theme.js"></script>
+
+</body>
+</html>

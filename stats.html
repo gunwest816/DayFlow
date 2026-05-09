@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Статистика</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+	<h1>DayFlow</h1>
+
+	<nav>
+		<a href="index.html">Головна</a>
+		<a href="stats.html">Статистика</a>
+		<a href="about.html">Про сайт</a>
+	</nav>
+
+	<button id="themeBtn">🌙</button>
+</header>
+
+<main>
+
+	<h2>Статистика задач</h2>
+
+	<div class="stats-container">
+
+		<div class="stat-card">
+			<h3>Всього задач</h3>
+			<p id="allTasks">0</p>
+		</div>
+
+		<div class="stat-card">
+			<h3>Виконано</h3>
+			<p id="doneTasks">0</p>
+		</div>
+
+		<div class="stat-card">
+			<h3>Активні</h3>
+			<p id="activeTasks">0</p>
+		</div>
+
+	</div>
+
+	<div class="productivity">
+
+		<h3>Продуктивність</h3>
+
+		<p id="productivityText">0%</p>
+
+		<div class="progress-bar">
+			<div id="statsProgress"></div>
+		</div>
+
+	</div>
+
+	<div class="motivation-box">
+		<h3>Мотивація</h3>
+		<p id="motivationText"></p>
+	</div>
+
+</main>
+
+<footer>
+	<p>2026 • Святослав • Створено на курсі WEB PRO</p>
+</footer>
+
+<script src="theme.js"></script>
+<script src="stats.js"></script>''
+
+</body>
+</html>	
